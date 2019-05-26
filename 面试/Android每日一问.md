@@ -1,38 +1,5 @@
 ## Android
 
-### 谈一下自定义 View 的流程
-
-https://jsonchao.github.io/2018/10/28/Android%20View%E7%9A%84%E7%BB%98%E5%88%B6%E6%B5%81%E7%A8%8B/
-
-需要注意的点：
-1. UNSPECIFIED 这个模式一定要充分理解，了解使用场景，早期的博客很多都不了解，所以都一带而过这个模式，造成很多人通过看博客学习的，其实自己也不清楚，实际上面试我会很注意这个细节，很少有人答出来。
-
-2. 关于LayoutParams，会涉及到好几个方法的重载，很多人不会注意到。
-
-3. View的状态存储于恢复不说了。
-
-4. 关于自定义View + 动画，要有一定的认识。
-
-### 聊一聊android的消息机制
-
-https://my.oschina.net/youranhongcha/blog/492591
-
-### Service
-
-https://my.oschina.net/youranhongcha/blog/710046
-
-### 说一下IntentService的原理？
-
-https://my.oschina.net/youranhongcha/blog/785387
-
-### 说一下AsyncTask的原理？
-
-https://my.oschina.net/youranhongcha/blog/1561107
-
-### 聊一下对Context的认识？
-
-https://my.oschina.net/youranhongcha/blog/1807189
-
 ### Intent传递数据大小有限制吗？为什么会有这个限制，谈谈你的理解？
 
 这里有对TransactionTooLargeException异常的解释：https://developer.android.com/reference/android/os/TransactionTooLargeException.html
@@ -84,16 +51,3 @@ Binder事务缓冲区有一个限定的固定大小，当前为1M(注：实际�
 
 **通过Intent传递数据应该注意：**
 对于大数据，例如长字符串，Bitmap等，不要考虑使用Intent传递。
-
-
-### 谈谈你是如何检测应用UI卡顿的？
-
-https://blog.csdn.net/lmj623565791/article/details/58626355
-
-http://blog.zhaiyifan.cn/2016/01/16/BlockCanaryTransparentPerformanceMonitor/
-
-https://mp.weixin.qq.com/s/MthGj4AwFPL2JrZ0x1i4fw
-
-### 谈一谈对Binder机制的理解？
-
-https://www.jianshu.com/p/adaa1a39a274
