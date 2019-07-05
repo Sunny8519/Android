@@ -1,11 +1,3 @@
-### Serializable和Parcelable的区别
-
-Serializable 
-Java序列化接口 在硬盘上读写 读写过程中有大量临时变量的生成，内部执行大量的i/o操作，效率很低。
-
-Parcelable 
-Android序列化接口 效率高 使用麻烦 在内存中读写（AS有相关插件 一键生成所需方法） ，对象不能保存到磁盘中。
-
 ### 谈一下自定义 View 的流程
 
 https://jsonchao.github.io/2018/10/28/Android%20View%E7%9A%84%E7%BB%98%E5%88%B6%E6%B5%81%E7%A8%8B/
@@ -18,10 +10,6 @@ https://jsonchao.github.io/2018/10/28/Android%20View%E7%9A%84%E7%BB%98%E5%88%B6%
 3. View的状态存储于恢复不说了。
 
 4. 关于自定义View + 动画，要有一定的认识。
-
-### 聊一聊android的消息机制
-
-https://my.oschina.net/youranhongcha/blog/492591
 
 ### Service
 

@@ -12,6 +12,8 @@ ANR全名叫做Application Not Responding，即应用程序无响应。当系统
 
 我们可以通过获取ANR发生时产生的trace.txt文件来分析。trace.txt文件位于/data/anr/文件夹下。移动设备在没有root的情况下，该文件夹是不可见的，但是我们可以通过下面adb命令把traces.txt文件拷贝出来：`adb pull /data/anr/traces.txt .`，这样traces.txt文件会被拷贝到项目的根目录下。
 
+注：如果通过上面命令不能copy出traces.txt文件，那么我们就需要使用`adb shell ls /data/anr/`看看该目录下有没有traces.txt文件。android8.0以上traces.txt文件好像是分开放在不同文件夹下的，而且导出需要权限。
+
 以下是在**主线程**中因为sleep一段时间产生的ANR日志记录：
 
 ```java
